@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauté & Cosmétique</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            background-image: url('./assets/img/bg1.jpg');
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <section class="relative h-screen bg-cover bg-center hero">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="fixed w-full z-50 shadow-lg">
+            <header class="bg-[#f8e7c2] text-black py-2 text-sm flex justify-between items-center px-6">
+                <div class="flex items-center space-x-3">
+                    <span class="text-sm md:text-lg font-semibold">📍 AKPAKPA , Cotonou (Bénin)</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm md:text-lg text-gray-600 hover:text-black">📧 taniaperle@gmail.com</a>
+                    <a href="#" class="text-sm md:text-lg text-gray-600 hover:text-black">📞 +229 00000000</a>
+                </div>
+            </header>
+            <div class="text-[#50C878] backdrop-filter backdrop-blur-lg">
+                <div class=" mx-auto flex items-center justify-between p-4 md:px-12">
+                    <a href="index.html" class="flex items-center">
+                        <img src="./assets/img/logo.jpg" alt="Tania Perle" class="h-32 rounded-lg">
+                    </a>
+
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#accueil" class="hover:text-pink-300">Accueil</a>
+                        <a href="#produits" class="hover:text-pink-300">Produits</a>
+                        <a href="#services" class="hover:text-pink-300">Services</a>
+                        <a href="#formations" class="hover:text-pink-300">Formations</a>
+                        <a href="#contact" class="hover:text-pink-300">Contact</a>
+                    </div>
+
+                    <div class="md:hidden">
+                        <button title="menu" id="menu-toggle" class="focus:outline-none">
+                            <i class="fas fa-bars fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="menu" class="hidden md:hidden">
+                    <div class="flex flex-col p-4">
+                        <a href="#accueil" class="py-2 hover:text-pink-300">Accueil</a>
+                        <a href="#produits" class="py-2 hover:text-pink-300">Produits</a>
+                        <a href="#services" class="py-2 hover:text-pink-300">Services</a>
+                        <a href="#formations" class="hover:text-pink-300">Formations</a>
+                        <a href="#contact" class="py-2 hover:text-pink-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+
+            <h1 class="text-6xl md:text-8xl font-bold text-pink-400">La Beauté au pluriel</h1>
+            <p class="mt-2 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas pariatur
+                debitis exercitationem.</p>
+            <div class="mt-6 flex space-x-4">
+                <a href="#" class="bg-white text-black px-6 py-3 rounded-lg text-lg hover:bg-gray-300">DÉCOUVRIR</a>
+                <a href="#"
+                    class="border border-pink-500 text-pink-400 px-6 py-3 rounded-lg text-lg hover:bg-[#50C878] hover:text-white">PRENDRE
+                    RDV</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- Presentation Section -->
+        <section class="bg-white py-16 px-6 text-center">
+            <h2 class="text-5xl font-bold text-pink-500">Tania Perle</h2>
+            <p class="text-3xl text-pink-500 mt-4">L'Institut de Beauté & Bien-être de Cotonou</p>
+            <p class="text-gray-700 mt-4 max-w-7xl mx-auto text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime, dicta esse odit explicabo
+                culpa? Vero, culpa alias. Eius aperiam facilis quibusdam, sed neque sit nemo dicta quod. Illum, sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum similique ut cupiditate
+                aliquid aut sapiente veritatis nisi earum, fugit itaque voluptatem ipsa. Repudiandae autem dolor quod id
+                provident at?
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-3xl text-pink-500">📞</span>
+                    <h3 class="text-lg font-semibold mt-2">Téléphone</h3>
+                    <p class="text-pink-500">+229 00 00 00 00</p>
+                </div>
+                <div>
+                    <span class="text-3xl text-pink-500">📍</span>
+                    <h3 class="text-lg font-semibold mt-2">Adresse</h3>
+                    <p class="text-pink-500">AKPAKPA - Suru-Léré,<br> rue opposée à la pharmacie,<br> puis
+                        premiere rue à gauche</p>
+                </div>
+                <div>
+                    <span class="text-3xl text-pink-500">⏰</span>
+                    <h3 class="text-lg font-semibold mt-2">Horaires</h3>
+                    <p class="text-pink-500">Lundi : 14h - 20h</p>
+                    <p class="text-pink-500">Mardi - Samedi : 9h - 20h</p>
+                    <p class="text-pink-500">Dimanche : 9h - 17h</p>
+                </div>
+                <div>
+                    <span class="text-3xl text-pink-500">✉️</span>
+                    <h3 class="text-lg font-semibold mt-2">Email</h3>
+                    <p class="text-pink-500">institut@gmail.com</p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold">Suivez-nous sur nos réseaux sociaux</h3>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-pink-500 text-3xl">📷</a>
+                    <a href="#" class="text-pink-500 text-3xl">📘</a>
+                    <a href="#" class="text-pink-500 text-3xl">🎵</a>
+                </div>
+                <p class="text-pink-500 mt-2">@labeauty_benin</p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-5 py-16">
+            <section id="produits" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Nos Produits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white shadow-lg rounded-lg p-5 text-center">
+                        <img src="./assets/img/bg1.jpg" alt="Produit" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Produit 1</h3>
+                        <a href="#"
+                            class="mt-4 inline-block bg-pink-500 text-white py-2 px-5 rounded-lg hover:bg-pink-600">Voir
+                            plus</a>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 text-center">
+                        <img src="./assets/img/bg1.jpg" alt="Produit" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Produit 2</h3>
+                        <a href="#"
+                            class="mt-4 inline-block bg-pink-500 text-white py-2 px-5 rounded-lg hover:bg-pink-600">Voir
+                            plus</a>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 text-center">
+                        <img src="./assets/img/bg1.jpg" alt="Produit" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Produit 3</h3>
+                        <a href="#"
+                            class="mt-4 inline-block bg-pink-500 text-white py-2 px-5 rounded-lg hover:bg-pink-600">Voir
+                            plus</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Nos Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg2.jpg" alt="Massage"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Massage Relaxant</h3>
+                            <p class="text-gray-600 mt-2">Détendez-vous avec nos massages apaisants.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg2.jpg" alt="Soin du visage"
+                            class="w-52 h-52 object-cover rounded-full rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Visage</h3>
+                            <p class="text-gray-600 mt-2">Ravivez l’éclat de votre peau avec nos soins spécialisés.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg2.jpg" alt="Soin du visage"
+                            class="w-52 h-52 object-cover rounded-full rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Visage</h3>
+                            <p class="text-gray-600 mt-2">Ravivez l’éclat de votre peau avec nos soins spécialisés.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg2.jpg" alt="Soin du visage"
+                            class="w-52 h-52 object-cover rounded-full rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Visage</h3>
+                            <p class="text-gray-600 mt-2">Ravivez l’éclat de votre peau avec nos soins spécialisés.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg2.jpg" alt="Soin du visage"
+                            class="w-52 h-52 object-cover rounded-full rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Visage</h3>
+                            <p class="text-gray-600 mt-2">Ravivez l’éclat de votre peau avec nos soins spécialisés.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg1.jpg" alt="Manucure"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Manucure & Pédicure</h3>
+                            <p class="text-gray-600 mt-2">Offrez à vos mains et pieds un soin parfait pour un look chic.
+                            </p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg1.jpg" alt="Coiffure"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Coiffure</h3>
+                            <p class="text-gray-600 mt-2">Transformez votre look avec nos services de coiffure
+                                professionnels.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg1.jpg" alt="Soin Corps"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Corps</h3>
+                            <p class="text-gray-600 mt-2">Revitalisez votre corps avec nos soins relaxants et
+                                nourrissants.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg1.jpg" alt="Soin Corps"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Soin du Corps</h3>
+                            <p class="text-gray-600 mt-2">Revitalisez votre corps avec nos soins relaxants et
+                                nourrissants.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-5 flex items-center">
+                        <img src="./assets/img/bg1.jpg" alt="Épilation"
+                            class="w-52 h-52 object-cover rounded-full ring-4 ring-pink-400">
+                        <div class="ml-5">
+                            <h3 class="text-xl font-semibold">Épilation</h3>
+                            <p class="text-gray-600 mt-2">Profitez d'une épilation douce et efficace pour une peau
+                                lisse.</p>
+                            <a href="#"
+                                class="mt-4 inline-block bg-purple-500 text-white py-2 px-5 rounded-lg hover:bg-purple-600">Voir
+                                plus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="temoignages" class="mb-16 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Témoignages Clients</h2>
+                <p class="italic text-gray-600">"Une expérience incroyable, détente assurée !" - Sophie M.</p>
+            </section>
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="bg-gray-800 text-white mt-16 py-10">  
+        <div class="max-w-7xl mx-auto px-4">  
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">  
+                <div>  
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>  
+                    <p class="mb-2">📍AKPAKPA - Suru-Léré,
+                        rue opposée à la pharmacie,
+                        puis premiere rue à gauche</p>  
+                    <p class="mb-2">📞 +229 00 00 00 00</p>  
+                    <p>📱 +229 00 00 00 00</p>  
+                </div>  
+                <div>  
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>  
+                    <ul>  
+                        <li><a href="#accueil" class="hover:text-pink-400">Accueil</a></li>  
+                        <li><a href="#produits" class="hover:text-pink-400">Produits</a></li>  
+                        <li><a href="#services" class="hover:text-pink-400">Services</a></li>  
+                        <li><a href="#contact" class="hover:text-pink-400">Contact</a></li>  
+                    </ul>  
+                </div>  
+                <div>  
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>  
+                    <div class="flex space-x-4">  
+                        <a href="#" class="hover:text-pink-400">  
+                            <i class="fab fa-facebook-f"></i>  
+                        </a>  
+                        <a href="#" class="hover:text-pink-400">  
+                            <i class="fab fa-whatsapp"></i>  
+                        </a>  
+                        <a href="#" class="hover:text-pink-400">  
+                            <i class="fab fa-instagram"></i>  
+                        </a>  
+                        <a href="#" class="hover:text-pink-400">  
+                            <i class="fab fa-tiktok"></i>  
+                        </a>  
+                        <a href="#" class="hover:text-pink-400">  
+                            <i class="fab fa-youtube"></i>  
+                        </a>  
+                    </div>  
+                </div>  
+                <div class="text-center">  
+                    <img src="./assets/img/logo.jpg" alt="Logo" class="mx-auto mb-4 h-20 rounded-lg">  
+                    <p class="text-sm">Votre beauté, notre passion. Tous droits réservés © 2025</p>  
+                </div>  
+            </div>  
+        </div>  
+    </footer>
+
+    <script>
+
+    </script>
+    <script src="./assets/script/js/script.js"></script>
+</body>
+
+</html>
