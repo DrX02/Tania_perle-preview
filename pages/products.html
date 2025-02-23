@@ -1,11 +1,735 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beauté & Cosmétique</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        /* Conteneur principal */
+        .carousel-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        /* Défilement infini */
+        .carousel {
+            display: flex;
+            gap: 16px;
+            animation: scroll 10s linear infinite;
+        }
+
+        /* Pause l’animation au survol */
+        .carousel-container:hover .carousel {
+            animation-play-state: paused;
+        }
+
+        /* Styles des cartes */
+        .card {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Animation pour le défilement */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Cacher la barre de défilement */
+        .hide-scroll-bar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="bg-gray-50">
+
+    <section class="relative h-36">
+
+        <div class="fixed w-full z-50 shadow-lg">
+            <header class="hidden md:flex bg-[#f8e7c2] text-black py-2 text-sm flex justify-between items-center px-6">
+                <div class="flex items-center space-x-3">
+                    <span class="text-sm md:text-md font-semibold">📍 AKPAKPA , Cotonou (Bénin)</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm md:text-md text-gray-600 hover:text-black">📧 taniaperle@gmail.com</a>
+                    <a href="#" class="text-sm md:text-md text-gray-600 hover:text-black">📞 +229 00000000</a>
+                </div>
+            </header>
+            <div class="text-[#50C878] backdrop-filter backdrop-blur-lg">
+                <div class=" mx-auto flex items-center justify-between p-4 md:px-12">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../assets/img/logo.jpg" alt="Tania Perle" class="h-20 rounded-lg">
+                    </a>
+
+                    <div class="hidden md:flex space-x-4">
+                        <a href="../index.html" class="hover:text-pink-300">Accueil</a>
+                        <a href="products.html" class="hover:text-pink-300">Produits</a>
+                        <a href="../pages/serveices.html" class="hover:text-pink-300">Services</a>
+                        <a href="../pages/formations.html" class="hover:text-pink-300">Formations</a>
+                    </div>
+                    <a href="#"
+                        class="hidden md:block border border-[#50C878] text-[#50C878] px-6 py-3 rounded-lg text-lg hover:bg-pink-500 hover:text-white">Contactez-Nous</a>
+
+                    <div class="md:hidden">
+                        <button title="menu" id="menu-toggle" class="focus:outline-none">
+                            <i class="fas fa-bars fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="menu" class="hidden md:hidden">
+                    <div class="flex flex-col p-4">
+                        <a href="../index.html" class="py-2 hover:text-pink-300">Accueil</a>
+                        <a href="products.html" class="py-2 hover:text-pink-300">Produits</a>
+                        <a href="../pages/serveices.html" class="py-2 hover:text-pink-300">Services</a>
+                        <a href="../pages/formations.html" class="hover:text-pink-300">Formations</a>
+                        <a href="#contact" class="py-2 hover:text-pink-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center px-6">
+
+            <!-- Div de Texte avec le Titre et les CTA -->
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Découvrez Nos Produits de Beauté</h1>
+                <p class="text-lg text-gray-600 mb-6">Offrez-vous le meilleur de la beauté avec nos produits de qualité
+                    supérieure, conçus pour sublimer votre routine de soins.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#commandez"
+                        class="bg-pink-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-pink-600 transition duration-200">
+                        Commandez Maintenant
+                    </a>
+                    <a href="#decouvrez"
+                        class="text-pink-500 border border-pink-500 px-6 py-3 rounded-lg shadow-md hover:bg-pink-100 transition duration-200">
+                        Découvrez Plus
+                    </a>
+                </div>
+            </div>
+
+            <!-- Div d'Image -->
+            <div class="md:w-1/2">
+
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+                    </div>
+                    <div class="grid grid-cols-5 gap-4">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mx-auto max-w-screen-xl py-16 my-8">
+        <div class="flex flex-col bg-gray-50 m-auto p-auto">
+            <h1 class="flex py-5 px-5 font-bold text-4xl text-gray-800">
+                Les coups de cœur du moment
+            </h1>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel hide-scroll-bar">
+                    <!-- Duplication pour l’effet infini -->
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                            alt="Image 1"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                            alt="Image 2"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+                            alt="Image 3"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                            alt="Image 4"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                            alt="Image 5"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
+                            alt="Image 6"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
+                            alt="Image 7"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
+                            alt="Image 8"></div>
+
+                    <!-- Clonage pour créer un effet de boucle -->
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                            alt="Image 1"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                            alt="Image 2"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+                            alt="Image 3"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                            alt="Image 4"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                            alt="Image 5"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
+                            alt="Image 6"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
+                            alt="Image 7"></div>
+                    <div class="card"><img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
+                            alt="Image 8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Catégories de Produits -->
+    <section>
+        <div class="mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 p-4">
+            <a href="#" class="group relative block bg-black">
+                <img alt="" src="../assets/img/Soins capillaires.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+
+                    <p class="text-xl font-bold text-white sm:text-2xl">Soins capillaires</p>
+
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic
+                                asperiores
+                                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group relative block bg-black">
+                <img alt="" src="../assets/img/Soins visage.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+
+                    <p class="text-xl font-bold text-white sm:text-2xl">Soins visage</p>
+
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic
+                                asperiores
+                                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group relative block bg-black">
+                <img alt="" src="../assets/img/Soins corporel.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+
+                    <p class="text-xl font-bold text-white sm:text-2xl">Soins corporel</p>
+
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic
+                                asperiores
+                                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group relative block bg-black">
+                <img alt="" src="../assets/img/Soins des mains et des pieds.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+
+                    <p class="text-xl font-bold text-white sm:text-2xl">Soins des mains et des pieds</p>
+
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic
+                                asperiores
+                                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="group relative block bg-black">
+                <img alt="" src="../assets/img/Maquillage.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+
+                    <p class="text-xl font-bold text-white sm:text-2xl">Maquillage</p>
+
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                            <p class="text-sm text-white">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic
+                                asperiores
+                                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <main>
+        <section class="max-w-7xl mx-auto py-16 px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">
+                Soins capillaires
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Produit 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 1">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 1</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 2">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 2</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 3">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 3</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 4">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 4</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Section des Produits -->
+        <section class="py-16 px-5 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-pink-600">Soins visage et corporel</h2>
+            <p class="text-center text-gray-600 mt-2">Une sélection élégante pour vous</p>
+
+            <!-- Grille des Produits -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 1">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 1</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 2">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 2</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 3">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 3</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 4">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 4</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 5">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 5</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carte Produit -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-64 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 6">
+                    <div class="p-5 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Produit 6</h3>
+                        <p class="text-gray-600 mt-2">Une description rapide du produit.</p>
+                        <button
+                            class="mt-4 px-5 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="max-w-7xl mx-auto py-16 px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">
+                Soins des mains et des pieds
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Produit 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 1">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 1</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 2">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 2</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 3">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 3</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 4">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 4</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto py-16 px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">
+                Maquillage
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- Produit 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 1">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 1</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 2">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 2</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 3">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 3</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img class="w-full h-56 object-cover" src="../assets/img/red nail polish beauty products.png"
+                        alt="Produit 4">
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Produit 4</h3>
+                        <p class="text-gray-600 text-sm my-2">Description rapide du produit.</p>
+                        <button
+                            class="w-full mt-3 py-2 px-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            Commander
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer class="bg-gray-800 text-white mt-16 py-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="mb-2">📍AKPAKPA - Suru-Léré,
+                        rue opposée à la pharmacie,
+                        puis premiere rue à gauche</p>
+                    <p class="mb-2">📞 +229 00 00 00 00</p>
+                    <p>📱 +229 00 00 00 00</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul>
+                        <li><a href="../index.html" class="hover:text-pink-400">Accueil</a></li>
+                        <li><a href="products.html" class="hover:text-pink-400">Produits</a></li>
+                        <li><a href="../pages/serveices.html" class="hover:text-pink-400">Services</a></li>
+                        <li><a href="#contact" class="hover:text-pink-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a title="link" href="#" class="hover:text-pink-400">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a title="link" href="#" class="hover:text-pink-400">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a title="link" href="#" class="hover:text-pink-400">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a title="link" href="#" class="hover:text-pink-400">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a title="link" href="#" class="hover:text-pink-400">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="../assets/img/logo.jpg" alt="Logo" class="mx-auto mb-4 h-20 rounded-lg">
+                    <p class="text-sm">Votre beauté, notre passion. Tous droits réservés © 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+    <script src="../assets/script/js/script.js"></script>
 </body>
+
 </html>
