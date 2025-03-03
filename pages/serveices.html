@@ -18,10 +18,279 @@
         }
     </style>
 </head>
-<body>
-    
 
-    <footer class="bg-gray-800 text-white mt-16 py-10">
+<body>
+
+    <section class="relative h-28 md:h-36">
+
+
+        <nav class="fixed w-full z-50 shadow-lg">
+            <header class="hidden md:flex bg-[#f8e7c2] text-black py-2 text-sm flex justify-between items-center px-6">
+                <div class="flex items-center space-x-3">
+                    <span class="text-sm md:text-md font-semibold">📍 AKPAKPA , Cotonou (Bénin)</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm md:text-md text-gray-600 hover:text-black">📧 taniaperle@gmail.com</a>
+                    <a href="#" class="text-sm md:text-md text-gray-600 hover:text-black">📞 +229 00000000</a>
+                </div>
+            </header>
+            <div class="text-[#50C878] backdrop-filter backdrop-blur-lg">
+                <div class=" mx-auto flex items-center justify-between p-4 md:px-12">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../assets/img/logo.jpg" alt="Tania Perle" class="h-20 rounded-lg">
+                    </a>
+
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#accueil" class="hover:text-pink-300">Accueil</a>
+                        <a href="#produits" class="hover:text-pink-300">Produits</a>
+                        <a href="#services" class="hover:text-pink-300">Services</a>
+                        <a href="#formations" class="hover:text-pink-300">Formations</a>
+                    </div>
+                    <a href="#"
+                        class="hidden md:block border border-[#50C878] text-[#50C878] px-6 py-3 rounded-lg text-lg hover:bg-pink-500 hover:text-white">Contactez-Nous</a>
+
+                    <div class="md:hidden">
+                        <button title="menu" id="menu-toggle" class="focus:outline-none">
+                            <i class="fas fa-bars fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="menu" class="hidden md:hidden">
+                    <div class="flex flex-col p-4">
+                        <a href="#accueil" class="py-2 hover:text-pink-300">Accueil</a>
+                        <a href="#produits" class="py-2 hover:text-pink-300">Produits</a>
+                        <a href="#services" class="py-2 hover:text-pink-300">Services</a>
+                        <a href="./pages/" class="hover:text-pink-300">Formations</a>
+                        <a href="#contact" class="py-2 hover:text-pink-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+    </section>
+
+    <section class="bg-gradient-to-r from-pink-300 to-green-300 py-24">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Détails des Services</h1>
+            <p class="mt-2 text-lg text-gray-600">Explorez nos différentes catégories de formations en beauté.</p>
+        </div>
+    </section>
+
+    <main class="py-10 px-4 max-w-7xl mx-auto">
+
+        <p class="px-4 text-gray-700 mt-4 max-w-4xl text-center mx-auto text-lg py-16">
+            À Tania Perle Cosmétique, nous vous offrons un cadre chaleureux et relaxant, où vous pouvez profiter de
+            soins de qualité, réalisés par des professionnels passionnés. Spécialisés dans une large gamme de services,
+            nous vous proposons des soins adaptés à vos besoins et vos envies, pour vous aider à prendre soin de votre
+            corps, de votre visage, de vos cheveux, et bien plus encore.
+
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1: Accueil, hygiène, désinfection de l’Institut -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p0.jpg" alt="Accueil" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Accueil, hygiène, désinfections</h2>
+                    <p class="mt-2 text-gray-600">Découvrez nos protocoles d'accueil et d'hygiène pour garantir votre
+                        confort et sécurité.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Analyse de peau -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/Analyse de peau.jpg" alt="Analyse de peau" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Analyse de peau</h2>
+                    <p class="mt-2 text-gray-600">Obtenez une évaluation précise de votre type de peau et nos
+                        recommandations personnalisées.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Soin de visage -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p8.jpg" alt="Soin de visage" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Soin de visage</h2>
+                    <p class="mt-2 text-gray-600">Profitez de nos soins du visage adaptés à vos besoins pour une peau
+                        éclatante.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Continuez avec les autres services de manière similaire -->
+
+            <!-- Service 4: Soin de corps -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p19.jpg" alt="Soin de corps" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Soin de corps</h2>
+                    <p class="mt-2 text-gray-600">Découvrez nos soins corporels relaxants pour revitaliser votre peau.
+                    </p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Soin de cheveux -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p27.jpg" alt="Soin de cheveux" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Soin de cheveux</h2>
+                    <p class="mt-2 text-gray-600">Des traitements capillaires pour nourrir et revitaliser vos cheveux.
+                    </p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Continuez avec d'autres services ici, en répétant la structure -->
+
+            <!-- Service 6: Onglerie -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p26.jpg" alt="Onglerie" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Onglerie</h2>
+                    <p class="mt-2 text-gray-600">Offrez-vous un soin complet de vos ongles avec nos services
+                        d'onglerie.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+            <!-- Service 7: Pédicure manucure -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p18.jpg" alt="Pédicure manucure" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Pédicure Manucure</h2>
+                    <p class="mt-2 text-gray-600">Offrez-vous des soins relaxants et esthétiques pour vos pieds et
+                        mains.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 8: Traitement des cheveux -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p24.jpg" alt="Traitement des cheveux" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Traitement des Cheveux</h2>
+                    <p class="mt-2 text-gray-600">Des solutions sur mesure pour la santé et la beauté de vos cheveux.
+                    </p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 9: Massage -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p23.jpg" alt="Massage" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Massage</h2>
+                    <p class="mt-2 text-gray-600">Venez vous détendre avec nos massages apaisants et revitalisants.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 10: Épilation et Tatouage -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p22.jpg" alt="Épilation et Tatouage" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Épilation et Tatouage</h2>
+                    <p class="mt-2 text-gray-600">Découvrez nos services d'épilation douce et de tatouage artistique.
+                    </p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 11: Makeup professionnel -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p20.jpg" alt="Makeup professionnel" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Makeup Professionnel</h2>
+                    <p class="mt-2 text-gray-600">Nos experts en maquillage sont là pour sublimer votre beauté.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 12: Attaché de foulard -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p21.jpg" alt="Attaché de foulard" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Attaché de Foulard</h2>
+                    <p class="mt-2 text-gray-600">Apprenez à attacher votre foulard avec style grâce à nos conseils.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 13: Onglerie générale -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p16.jpg" alt="Onglerie générale" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Onglerie Générale</h2>
+                    <p class="mt-2 text-gray-600">Tous les soins nécessaires pour vos ongles, des plus simples aux plus
+                        élaborés.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 14: Confection de perruque -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p17.jpg" alt="Confection de perruque" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Confection de Perruque</h2>
+                    <p class="mt-2 text-gray-600">Nous confectionnons des perruques sur mesure selon vos désirs et
+                        besoins.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+            <!-- Service 15: Pédicure manucure (encore) -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../assets/img/p25.jpg" alt="Pédicure manucure" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold">Pédicure Manucure</h2>
+                    <p class="mt-2 text-gray-600">Découvrez nos soins complets pour des mains et pieds impeccables.</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Prendre
+                        Rendez-vous!</a>
+                </div>
+            </div>
+
+        </div>
+        <p class="px-4 text-gray-700 mt-4 max-w-4xl text-center mx-auto text-lg pt-16">Nous nous engageons à vous
+            fournir des services de haute qualité dans une ambiance conviviale et professionnelle, pour que chaque
+            visite soit une véritable expérience de détente et de beauté.</p>
+    </main>
+
+    <footer class="bg-pink-700 text-white mt-16 py-10">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
@@ -29,41 +298,46 @@
                     <p class="mb-2">📍AKPAKPA - Suru-Léré,
                         rue opposée à la pharmacie,
                         puis premiere rue à gauche</p>
-                    <p class="mb-2">📞 +229 00 00 00 00</p>
-                    <p>📱 +229 00 00 00 00</p>
+                    <p class="mb-2">📞 +229 01 46 50 40 11
+                    </p>
+                    <p class="px-6 mb-2"> +229 01 61 88 33 28</p>
+                    <p class="mb-2">📱 +229 01 57 06 95 17
+                    </p>
+                    <p class="px-6"> +229 01 66 93 70 15</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
                     <ul>
-                        <li><a href="#accueil" class="hover:text-pink-400">Accueil</a></li>
-                        <li><a href="#produits" class="hover:text-pink-400">Produits</a></li>
-                        <li><a href="#services" class="hover:text-pink-400">Services</a></li>
-                        <li><a href="#contact" class="hover:text-pink-400">Contact</a></li>
+                        <li><a href="../index.html" class="hover:text-green-400">Accueil</a></li>
+                        <li><a href="../pages/products.html" class="hover:text-green-400">Produits</a></li>
+                        <li><a href="../pages/formations.html" class="hover:text-green-400">Produits</a></li>
+                        <li><a href="../pages/serveices.html" class="hover:text-green-400">Services</a></li>
+                        <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
                     <div class="flex space-x-4">
-                        <a title="link" href="#" class="hover:text-pink-400">
+                        <a title="link" href="#" class="hover:text-green-400">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a title="link" href="#" class="hover:text-pink-400">
+                        <a title="link" href="#" class="hover:text-green-400">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a title="link" href="#" class="hover:text-pink-400">
+                        <a title="link" href="#" class="hover:text-green-400">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a title="link" href="#" class="hover:text-pink-400">
+                        <a title="link" href="#" class="hover:text-green-400">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a title="link" href="#" class="hover:text-pink-400">
+                        <a title="link" href="#" class="hover:text-green-400">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                 </div>
                 <div class="text-center">
                     <img src="../assets/img/logo.jpg" alt="Logo" class="mx-auto mb-4 h-20 rounded-lg">
-                    <p class="text-sm">Votre beauté, notre passion. Tous droits réservés © 2025</p>
+                    <p class="text-sm italic">Votre beauté, notre passion. Tous droits réservés © 2025</p>
                 </div>
             </div>
         </div>

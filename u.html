@@ -1,0 +1,181 @@
+<!DOCTYPE html>  
+<html lang="fr">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar Exemple</title>  
+</head>  
+<body class="bg-gray-100">  
+
+<div class="bg-gray-800 text-white backdrop-filter backdrop-blur-lg">  
+    <div class=" mx-auto flex items-center justify-between p-4 md:px-12">  
+        <a href="index.html" class="flex items-center">  
+            <img src="./assets/img/logo.jpg" alt="Tania Perle" class="h-32 rounded-lg">  
+        </a>  
+
+        <div class="hidden md:flex space-x-4">  
+            <a href="#accueil" class="hover:text-pink-300">Accueil</a>  
+            <a href="#produits" class="hover:text-pink-300">Produits</a>  
+            <a href="#services" class="hover:text-pink-300">Services</a>
+            <a href="#formations" class="hover:text-pink-300">Formations</a>  
+            <a href="#contact" class="hover:text-pink-300">Contact</a>  
+        </div>  
+
+        <div class="md:hidden">  
+            <button title="menu" id="menu-toggle" class="focus:outline-none">  
+                <i class="fas fa-bars fa-2x"></i>  
+            </button>  
+        </div>  
+    </div>  
+
+    <div id="menu" class="hidden md:hidden">  
+        <div class="flex flex-col p-4">  
+            <a href="#accueil" class="py-2 hover:text-pink-300">Accueil</a>  
+            <a href="#produits" class="py-2 hover:text-pink-300">Produits</a>  
+            <a href="#services" class="py-2 hover:text-pink-300">Services</a>  
+            <a href="#formations" class="hover:text-pink-300">Formations</a>  
+            <a href="#contact" class="py-2 hover:text-pink-300">Contact</a>  
+        </div>  
+    </div>  
+</div>  
+
+<div class="mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 p-4">
+    <a href="#" class="group relative block bg-black">
+        <img
+          alt=""
+          src="./assets/img/Soins capillaires.jpg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        />
+      
+        <div class="relative p-4 sm:p-6 lg:p-8">
+          <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+      
+          <p class="text-xl font-bold text-white sm:text-2xl">Soins capillaires</p>
+      
+          <div class="mt-32 sm:mt-48 lg:mt-64">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <p class="text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    <a href="#" class="group relative block bg-black">
+        <img
+          alt=""
+          src="./assets/img/Soins visage.jpg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        />
+      
+        <div class="relative p-4 sm:p-6 lg:p-8">
+          <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+      
+          <p class="text-xl font-bold text-white sm:text-2xl">Soins visage</p>
+      
+          <div class="mt-32 sm:mt-48 lg:mt-64">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <p class="text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="group relative block bg-black">
+        <img
+          alt=""
+          src="./assets/img/Soins corporel.jpg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        />
+      
+        <div class="relative p-4 sm:p-6 lg:p-8">
+          <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+      
+          <p class="text-xl font-bold text-white sm:text-2xl">Soins corporel</p>
+      
+          <div class="mt-32 sm:mt-48 lg:mt-64">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <p class="text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="group relative block bg-black">
+        <img
+          alt=""
+          src="./assets/img/Soins des mains et des pieds.jpg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        />
+      
+        <div class="relative p-4 sm:p-6 lg:p-8">
+          <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+      
+          <p class="text-xl font-bold text-white sm:text-2xl">Soins des mains et des pieds</p>
+      
+          <div class="mt-32 sm:mt-48 lg:mt-64">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <p class="text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="group relative block bg-black">
+        <img
+          alt=""
+          src="./assets/img/Maquillage.jpg"
+          class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+        />
+      
+        <div class="relative p-4 sm:p-6 lg:p-8">
+          <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">Developer</p>
+      
+          <p class="text-xl font-bold text-white sm:text-2xl">Maquillage</p>
+      
+          <div class="mt-32 sm:mt-48 lg:mt-64">
+            <div
+              class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+            >
+              <p class="text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
+                quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+</div>
+
+
+
+<script>  
+    const menuToggle = document.getElementById('menu-toggle');  
+    const menu = document.getElementById('menu');  
+
+    menuToggle.addEventListener('click', () => {  
+        menu.classList.toggle('hidden');  
+    });  
+</script>  
+
+</body>  
+</html>
